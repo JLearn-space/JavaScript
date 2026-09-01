@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 9 — Практика: DOM</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+    h1 { color: #2c3e50; }
+    .block { border-left: 4px solid #1abc9c; padding: 10px 20px; margin: 20px 0; background: #fafafa; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    input, button { padding: 8px 12px; font-size: 16px; }
+    ul { list-style: none; padding: 0; }
+    ul li { background: #ecf0f1; padding: 10px; margin: 5px 0; border-radius: 6px;
+      display: flex; justify-content: space-between; align-items: center; }
+    ul li button { background: #e74c3c; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .row { display: flex; gap: 10px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>Урок 9: DOM — работа с элементами</h1>
+
+  <div class="block">
+    <h2>Изменение свойств и классов</h2>
+    <p id="demo-text">Этот текст изменится.</p>
+    <button id="text-btn">Изменить текст</button>
+    <button id="class-btn">Переключить класс .highlight</button>
+  </div>
+
+  <div class="block">
+    <h2>Создание и удаление элементов</h2>
+    <div class="row">
+      <input type="text" id="item-input" placeholder="Текст нового элемента">
+      <button id="add-btn">Добавить</button>
+    </div>
+    <ul id="list">
+      <li>Первый элемент <button>Удалить</button></li>
+    </ul>
+    <p>Клик по «Удалить» работает через делегирование событий — обработчик висит на списке.</p>
+  </div>
+
+  <div class="block">
+    <h2>Обработка формы</h2>
+    <form id="my-form">
+      <input type="text" name="field" placeholder="Напиши что-нибудь">
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="form-output"></p>
+    <p><code>preventDefault()</code> не даёт странице перезагрузиться.</p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

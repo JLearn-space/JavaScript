@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 4 — Практика: Объекты</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+    h1 { color: #2c3e50; }
+    .block { border-left: 4px solid #8e44ad; padding: 10px 20px; margin: 20px 0; background: #fafafa; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    #output { background: #2c3e50; color: #2ecc71; padding: 15px; border-radius: 6px;
+      font-family: "Courier New", monospace; white-space: pre-wrap; }
+    #user-card { border: 1px solid #8e44ad; border-radius: 8px; padding: 15px; max-width: 320px; }
+    #user-card h2 { margin: 0 0 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>Урок 4: Объекты</h1>
+
+  <div class="block">
+    <h2>1. Создание объекта</h2>
+    <p>Объект хранит данные как пары <code>ключ: значение</code>.</p>
+  </div>
+
+  <div class="block">
+    <h2>2. Доступ к свойствам</h2>
+    <p>Точечная нотация <code>user.name</code> и скобочная <code>user['name']</code>.</p>
+  </div>
+
+  <div class="block">
+    <h2>3. Методы объекта</h2>
+    <p>Свойство, значением которого является функция, называется методом.</p>
+  </div>
+
+  <div id="user-card">
+    <h2>Карточка пользователя</h2>
+    <p id="card-name"></p>
+    <p id="card-age"></p>
+    <p id="card-city"></p>
+  </div>
+
+  <h2>Результаты в консоли (F12 → Console)</h2>
+  <div id="output">Открой консоль браузера.</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

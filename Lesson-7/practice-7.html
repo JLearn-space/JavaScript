@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 7 — Практика: Функции</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+    h1 { color: #2c3e50; }
+    .block { border-left: 4px solid #2980b9; padding: 10px 20px; margin: 20px 0; background: #fafafa; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    #counter { font-size: 3rem; color: #2980b9; font-weight: bold; }
+    #output { background: #2c3e50; color: #2ecc71; padding: 15px; border-radius: 6px;
+      font-family: "Courier New", monospace; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+  <h1>Урок 7: Функции</h1>
+
+  <div class="block">
+    <h2>1. Три способа создания функции</h2>
+    <p>Function Declaration, Function Expression и стрелочная функция.</p>
+  </div>
+
+  <div class="block">
+    <h2>2. return и параметры по умолчанию</h2>
+    <p><code>multiply(a, b = 2)</code> — если второй аргумент не передан, используется <code>2</code>.</p>
+  </div>
+
+  <div class="block">
+    <h2>3. Замыкание (счётчик)</h2>
+    <p>Функция «запоминает» переменную <code>count</code> из внешней области видимости.</p>
+    <div id="counter">0</div>
+    <button id="counter-btn">Нажми, чтобы увеличить</button>
+  </div>
+
+  <div class="block">
+    <h2>4. Callback — функция как аргумент</h2>
+    <p><code>processUser('Алекс', greetUser)</code> — внутри функции вызывается переданная функция.</p>
+  </div>
+
+  <h2>Результаты в консоли (F12 → Console)</h2>
+  <div id="output">Открой консоль браузера.</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

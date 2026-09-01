@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 8 — Практика: Дата и время</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+    h1 { color: #2c3e50; }
+    .block { border-left: 4px solid #c0392b; padding: 10px 20px; margin: 20px 0; background: #fafafa; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    #clock { font-size: 3rem; color: #c0392b; font-weight: bold; font-family: "Courier New", monospace; }
+    #date-info { font-size: 1.2rem; color: #555; }
+    #output { background: #2c3e50; color: #2ecc71; padding: 15px; border-radius: 6px;
+      font-family: "Courier New", monospace; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+  <h1>Урок 8: Дата и время</h1>
+
+  <div class="block">
+    <h2>Живые часы (setInterval)</h2>
+    <div id="clock">--:--:--</div>
+    <p id="date-info"></p>
+    <p>Таймер <code>setInterval</code> обновляет время каждую секунду.</p>
+  </div>
+
+  <div class="block">
+    <h2>Получение компонентов даты</h2>
+    <p>Методы <code>getFullYear()</code>, <code>getMonth()</code>, <code>getDate()</code> и другие. Внимание: месяцы считаются с 0!</p>
+  </div>
+
+  <div class="block">
+    <h2>setTimeout — действие через N секунд</h2>
+    <p>Через 3 секунды появится сообщение в консоли.</p>
+  </div>
+
+  <h2>Результаты в консоли (F12 → Console)</h2>
+  <div id="output">Открой консоль браузера.</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

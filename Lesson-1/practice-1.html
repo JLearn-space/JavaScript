@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 1 — Практика: Способы подключения JavaScript</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+    h1 { color: #2c3e50; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    .block { border-left: 4px solid #f1c40f; padding: 10px 20px; margin: 20px 0; background: #fafafa; }
+  </style>
+</head>
+<body>
+
+  <h1>Урок 1: Способы подключения JavaScript</h1>
+
+  <p>Эта страница демонстрирует три способа подключения JavaScript.</p>
+
+  <!-- Способ 1: Inline-обработчик (атрибут onclick) -->
+  <div class="block">
+    <h2>Способ 1: Inline-обработчик</h2>
+    <p>Код записан прямо внутри атрибута <code>onclick</code> тега.</p>
+    <button onclick="alert('Привет из inline-обработчика!'); console.log('Inline: атрибут onclick');">
+      Нажми меня
+    </button>
+  </div>
+
+  <!-- Способ 2: Внутренний скрипт -->
+  <div class="block">
+    <h2>Способ 2: Внутренний тег &lt;script&gt;</h2>
+    <p>Код записан внутри тега &lt;script&gt; в конце страницы.</p>
+    <button id="internal-btn">Нажми меня</button>
+  </div>
+
+  <!-- Способ 3: Внешний файл -->
+  <div class="block">
+    <h2>Способ 3: Внешний файл js/script.js</h2>
+    <p>Код вынесен в отдельный файл и подключён через атрибут <code>src</code>.</p>
+    <button id="external-btn">Нажми меня</button>
+  </div>
+
+  <script>
+    // Внутренний скрипт — второй способ подключения
+    const internalBtn = document.getElementById('internal-btn');
+    internalBtn.addEventListener('click', () => {
+      alert('Привет из внутреннего тега script!');
+      console.log('Внутренний: тег <script>');
+    });
+  </script>
+
+  <!-- Внешний скрипт — третий способ подключения -->
+  <script src="js/external.js"></script>
+</body>
+</html>

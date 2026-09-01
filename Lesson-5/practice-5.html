@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 5 — Практика: Условные конструкции</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+    h1 { color: #2c3e50; }
+    .block { border-left: 4px solid #f39c12; padding: 10px 20px; margin: 20px 0; background: #fafafa; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    input, button { padding: 8px 12px; font-size: 16px; }
+    .result { padding: 10px; border-radius: 6px; margin-top: 10px; font-weight: bold; }
+    .ok { background: #d4efdf; color: #27ae60; }
+    .warn { background: #fdebd0; color: #e67e22; }
+    .err { background: #fadbd8; color: #c0392b; }
+  </style>
+</head>
+<body>
+
+  <h1>Урок 5: Условные конструкции</h1>
+
+  <div class="block">
+    <h2>Проверка возраста</h2>
+    <input type="number" id="age-input" placeholder="Введи возраст" min="0">
+    <button id="age-btn">Проверить</button>
+    <div id="age-result" class="result"></div>
+  </div>
+
+  <div class="block">
+    <h2>Валидация формы (сравнение с реальной жизнью)</h2>
+    <input type="email" id="email-input" placeholder="Email">
+    <input type="password" id="password-input" placeholder="Пароль (мин. 6 симв.)">
+    <button id="form-btn">Зарегистрироваться</button>
+    <div id="form-result" class="result"></div>
+  </div>
+
+  <div class="block">
+    <h2>День недели (switch...case)</h2>
+    <input type="number" id="day-input" placeholder="Число от 1 до 7" min="1" max="7">
+    <button id="day-btn">Узнать день</button>
+    <div id="day-result" class="result"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

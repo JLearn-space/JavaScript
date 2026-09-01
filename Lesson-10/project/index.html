@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Итоговый проект — Менеджер задач</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Менеджер задач</h1>
+      <p class="subtitle">Итоговый проект курса «JavaScript: за 10 уроков»</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <input type="text" id="task-input" placeholder="Новая задача..." autocomplete="off">
+      <input type="date" id="deadline-input">
+      <button type="submit">Добавить</button>
+    </form>
+
+    <section class="toolbar">
+      <div class="filters">
+        <button data-filter="all" class="filter-btn active">Все</button>
+        <button data-filter="active" class="filter-btn">Активные</button>
+        <button data-filter="completed" class="filter-btn">Выполненные</button>
+      </div>
+      <button id="sort-btn" class="sort-btn">Сортировка: по дате</button>
+    </section>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <section class="stats">
+      <span>Всего: <b id="stat-total">0</b></span>
+      <span>Активных: <b id="stat-active">0</b></span>
+      <span>Выполнено: <b id="stat-completed">0</b></span>
+    </section>
+
+    <button id="clear-btn" class="clear-btn">Очистить завершённые</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
